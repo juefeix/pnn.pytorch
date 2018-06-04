@@ -97,7 +97,7 @@ Perturbation residual module.
 
 ## Implementations
 
-The code base is built upon [fb.resnet.torch](https://github.com/facebook/fb.resnet.torch).
+The code base is built upon [PyTorchNet](https://github.com/human-analysis/pytorchnet).
 
 ### Requirements
 PyTorch 0.4.0
