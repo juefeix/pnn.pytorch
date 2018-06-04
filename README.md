@@ -29,26 +29,26 @@ recognition models. We introduce a very simple, yet effective, module called a p
 ***
 
 ### Overview
-<img src="http://xujuefei.com/pnn_image/1_3x3.png" title="An Observation from LBCNN" style="width: 600px;"/>
+<img src="http://xujuefei.com/pnn_image/1_3x3.png" title="Figure" style="width: 600px;"/>
 
 In [Local Binary Convolutional Neural Networks (LBCNN)](https://arxiv.org/abs/1608.06049), convolving with a binary filter is equivalent to addition and subtraction among neighbors within the patch. Similarly, convolving with a
 real-valued filter is equivalent to the linear combination of the neighbors using filter weights. Either way, the convolution is a linear function that transforms the center pixel x5 to a single pixel in the output feature map, by involving its neighbors. Can we arrive at a simpler mapping function?
 
 
-<img src="http://xujuefei.com/pnn_image/2_pipeline_shorter_pnn.png" title="Basic Idea of Local Binary Patterns" style="width: 800px;"/>
+<img src="http://xujuefei.com/pnn_image/2_pipeline_shorter_pnn.png" title="Figure" style="width: 800px;"/>
 
 
 Basic modules in CNN, LBCNN, and PNN. Wl and Vl are the learnable weights for local binary convolution layer and the proposed perturbation layer respectively. For PNN: (a) input, (b) fixed non-learnable perturbation masks, (c) response maps by addition with perturbation masks, (d) ReLU, (e) activated response maps, (f) learnable linear weights for combining the activated response maps, (g) feature map.
 
 
-<img src="http://xujuefei.com/pnn_image/3_pnn_eq.png" title="Local Binary Convolutional Module" style="width: 600px;"/>
+<img src="http://xujuefei.com/pnn_image/3_pnn_eq.png" title="Figure" style="width: 600px;"/>
 
 
 N^i is the i-th random additive perturbation mask. The linear weights V are the only learnable parameters of a perturbation layer.
 
 
 
-<img src="http://xujuefei.com/pnn_image/4_module.png" title="Perturbation Layer Detail" style="width: 600px;"/>
+<img src="http://xujuefei.com/pnn_image/4_module.png" title="Figure" style="width: 600px;"/>
 
 
 Perturbation residual module. 
