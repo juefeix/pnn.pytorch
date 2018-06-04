@@ -35,7 +35,7 @@ In [Local Binary Convolutional Neural Networks (LBCNN)](https://arxiv.org/abs/16
 real-valued filter is equivalent to the linear combination of the neighbors using filter weights. Either way, the convolution is a linear function that transforms the center pixel x5 to a single pixel in the output feature map, by involving its neighbors. Can we arrive at a simpler mapping function?
 
 
-<img src="http://xujuefei.com/pnn_image/2_pipeline_shorter_pnn.png" title="Figure" style="width: 600px;"/>
+<img src="http://xujuefei.com/pnn_image/2_pipeline_shorter_pnn_sm.png" title="Figure" style="width: 800px;"/>
 
 
 Basic modules in CNN, LBCNN, and PNN. Wl and Vl are the learnable weights for local binary convolution layer and the proposed perturbation layer respectively. For PNN: (a) input, (b) fixed non-learnable perturbation masks, (c) response maps by addition with perturbation masks, (d) ReLU, (e) activated response maps, (f) learnable linear weights for combining the activated response maps, (g) feature map.
