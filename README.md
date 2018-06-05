@@ -108,9 +108,8 @@ PyTorch 0.4.0
 * CIFAR-10
 
  
-*PNN (~xx% after 80 epochs)*
+*PNN (~92-93% after 80 epochs, no test-time image flipping)*
 
 ```bash
-python main.py --net-type 'noiseresnet50' --dataset-test 'CIFAR10' --dataset-train 'CIFAR10' --nfilter 64 --batch-size 10
-```
+python main.py --net-type 'noiseresnet18' --dataset-test 'CIFAR10' --dataset-train 'CIFAR10' --nfilters 128 --batch-size 10 --learning-rate 1e-4```
  
