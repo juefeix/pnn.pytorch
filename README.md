@@ -26,7 +26,7 @@ Marios Savvides
 
 ***
 ### Blog (coming soon)
-[Medium: Understanding Perturbative Neural Networks (PNN)](https://github.com/juefeix/pnn.pytorch)
+[Understanding Perturbative Neural Networks (PNN)](https://github.com/juefeix/pnn.pytorch)
 
 ***
 
