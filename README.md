@@ -91,15 +91,15 @@ Perturbation residual module.
 * Felix Juefei-Xu, Vishnu Naresh Boddeti, and Marios Savvides, [**Perturbative Neural Networks**](https://arxiv.org/pdf/1806.01817v1.pdf),
 * To appear in *IEEE Computer Vision and Pattern Recognition (CVPR), 2018*.
 
-* @inproceedings{juefei-xu2018pnn,<br>
-&nbsp;&nbsp;&nbsp;title={{Perturbative Neural Networks}},<br>
-&nbsp;&nbsp;&nbsp;author={Felix Juefei-Xu and Vishnu Naresh Boddeti and Marios Savvides},<br>
-&nbsp;&nbsp;&nbsp;booktitle={IEEE Computer Vision and Pattern Recognition (CVPR)},<br>
-&nbsp;&nbsp;&nbsp;month={June},<br>
-&nbsp;&nbsp;&nbsp;year={2018}<br>
+```
+@inproceedings{juefei-xu2018pnn,
+title={{Perturbative Neural Networks}},
+author={Felix Juefei-Xu and Vishnu Naresh Boddeti and Marios Savvides},
+booktitle={IEEE Computer Vision and Pattern Recognition (CVPR)},
+month={June},
+year={2018}
 }
-
-
+```
 
 ***
 
