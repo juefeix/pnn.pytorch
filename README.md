@@ -1,6 +1,8 @@
 # Perturbative Neural Networks (PNN)
 PyTorch implementation of CVPR'18 - Perturbative Neural Networks http://xujuefei.com/pnn.html
 
+***
+
 ### Paper Download
 
 [https://arxiv.org/pdf/1806.01817v1.pdf](https://arxiv.org/pdf/1806.01817v1.pdf)
@@ -37,7 +39,7 @@ recognition models. We introduce a very simple, yet effective, module called a p
 ### Overview
 <img src="http://xujuefei.com/pnn_image/1_3x3.png" title="Figure" style="width: 600px;"/>
 
-In [Local Binary Convolutional Neural Networks (LBCNN), CVPR'17,](https://arxiv.org/abs/1608.06049), convolving with a binary filter is equivalent to addition and subtraction among neighbors within the patch. Similarly, convolving with a
+In [Local Binary Convolutional Neural Networks (LBCNN), CVPR'17](https://arxiv.org/abs/1608.06049), convolving with a binary filter is equivalent to addition and subtraction among neighbors within the patch. Similarly, convolving with a
 real-valued filter is equivalent to the linear combination of the neighbors using filter weights. Either way, the convolution is a linear function that transforms the center pixel x5 to a single pixel in the output feature map, by involving its neighbors. Can we arrive at a simpler mapping function?
 
 
