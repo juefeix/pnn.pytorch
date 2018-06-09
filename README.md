@@ -93,11 +93,11 @@ Perturbation residual module.
 
 ```
 @inproceedings{juefei-xu2018pnn,
-title={{Perturbative Neural Networks}},
-author={Felix Juefei-Xu and Vishnu Naresh Boddeti and Marios Savvides},
-booktitle={IEEE Computer Vision and Pattern Recognition (CVPR)},
-month={June},
-year={2018}
+ title={{Perturbative Neural Networks}},
+ author={Felix Juefei-Xu and Vishnu Naresh Boddeti and Marios Savvides},
+ booktitle={IEEE Computer Vision and Pattern Recognition (CVPR)},
+ month={June},
+ year={2018}
 }
 ```
 
