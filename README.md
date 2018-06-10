@@ -13,7 +13,7 @@ PyTorch implementation of CVPR'18 - Perturbative Neural Networks http://xujuefei
 
 [Felix Juefei Xu](http://xujuefei.com) [(Contact)](mailto:juefei.xu[at]gmail.com)
 
-[Vishnu Naresh Boddeti](http://vishnu.boddeti.net) [(Contact)](mailto:naresh[at]cmu.edu)
+[Vishnu Naresh Boddeti](http://vishnu.boddeti.net) [(Contact)](mailto:vishnu[at]msu.edu)
 
 Marios Savvides
 
