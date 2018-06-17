@@ -113,7 +113,7 @@ PyTorch 0.4.0
 
 ### Training Recipes
 
-*CIFAR-10
+*CIFAR-10*
 
  
 *PNN (~92-93% after 80 epochs, no test-time image flipping)*
