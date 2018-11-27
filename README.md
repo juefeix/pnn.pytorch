@@ -1,3 +1,25 @@
+**Annoucement**: This repo is outdated. Please refer to the new PNN repo here: [https://github.com/juefeix/pnn.pytorch.update](https://github.com/juefeix/pnn.pytorch.update)
+
+
+The demo code in our original PNN repo was meant to showcase a working PNN module in a minimalist way, with much shortened training cycle. Unfortunately, the default smoothing flag in computing test accuracy was erroneous, as I have acknowledged in my initial Reddit reply. This default flag resulted in higher-than-actual accuracy, and mislead me to pick a variant of PNN with 7x7 filters in the first layer instead of 3x3 filters (which improves performance), for our public repo.
+
+There is an easy fix to improve the model posted in our original PNN repo. We just need to change 4 lines of code and it should reach the same performance level as in the [updated PNN repo](https://github.com/juefeix/pnn.pytorch.update). Here is what you need to do.
+
+* (1) Change the default smoothing flag to ```False``` in ```/plugins/monitor.py```, see [here](https://github.com/juefeix/pnn.pytorch/blob/54ef709316e24d19c7990c353f64f5570c4e10ba/plugins/monitor.py#L7). The line should be changed to ```def __init__(self, smoothing=False, smoothness=0.7):```.
+
+* (2) Resetting LR scheduling in ```train.py``` for longer training cycles, see [here](https://github.com/juefeix/pnn.pytorch/blob/54ef709316e24d19c7990c353f64f5570c4e10ba/train.py#L121). The line should be changed to
+```return self.lr * ((0.2 ** int(epoch >= 150)) * (0.2 ** int(epoch >= 250)) * (0.2 ** int(epoch >= 300)) * (0.2 ** int(epoch >= 350)) * (0.2 ** int(epoch >= 400)))```.
+
+* (3-4) Using 3x3 conv for the first PNN layer in ```/models/naiveresnet.py```, see [here](https://github.com/juefeix/pnn.pytorch/blob/54ef709316e24d19c7990c353f64f5570c4e10ba/models/naiveresnet.py#L92). The line should be changed to ```nn.Conv2d(nchannels,nfilters,kernel_size=3,stride=1,padding=1,bias=False),```. Next, comment out [Line 95](https://github.com/juefeix/pnn.pytorch/blob/54ef709316e24d19c7990c353f64f5570c4e10ba/models/naiveresnet.py#L95). Finally, add a line ```pool = 4``` after [Line 96](https://github.com/juefeix/pnn.pytorch/blob/54ef709316e24d19c7990c353f64f5570c4e10ba/models/naiveresnet.py#L96) for setting the proper average pool kernel size.
+
+The original code portion will be kept untouched for exhibition purpose for now.
+
+
+***
+
+***
+
+
 # Perturbative Neural Networks (PNN)
 PyTorch implementation of CVPR'18 - Perturbative Neural Networks http://xujuefei.com/pnn.html
 
